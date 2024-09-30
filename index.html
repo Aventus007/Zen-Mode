@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+        integrity="sha512-/VYneElp5u4puMaIp/4ibGxlTd2MV3kuUIroR3NSQjS2h9XKQNebRQiyyoQKeiGE9mRdjSCIZf9pb7AVJ8DhCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Zen Mode</title>
+</head>
+<body>
+    <main>
+        <div class="top-nav">
+            <div class="logo">H.</div>
+            <div class="right-icons">
+                <button>Login</button>
+            </div>
+        </div>
+        <div class="left-nav">
+            <a href="#"><i class="ri-mail-add-line"></i></a>
+            <div class="mid-icons">
+                <a href="#"><i class="ri-delete-back-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+            </div>
+        </div>
+        <span class="follow">
+            <div class="line"></div> WELLNESS
+        </span>
+        <h1><span>Z</span><span>e</span><span style="margin-right: 24px;">n</span><span>M</span><span>o</span><span>d</span><span>e</span></h1>
+
+        <div class="yellow-bg"></div>
+
+        <div class="text">
+            <h4>Inspiration</h4>
+            <p>Strength doesn’t come from what you can do. It comes from overcoming the things you once thought you couldn’t</p>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="img\4.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    A supportive community forum for open discussions about mental health.
+                    <a href="#">Forum</a>
+                </div>
+                <div class="card-footer">
+                    <span></span>
+                    <div class="share">
+                        <button>Click</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-black">
+                <div class="card-img">
+                    <img src="img\6.jpg"
+                        alt="">
+                </div>
+                <div class="card-body">
+                    Get access to a Chatbot that helps you on your quest to a better self.
+                    <a href="#">Serenity-Mind LLM</a>
+                </div>
+                <div class="card-footer">
+                    <span>Chat Bot</span>
+                    <div class="share">
+                        <button>Click</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="img\8.jpg"
+                        alt="">
+                </div>
+                <div class="card-body">
+                    Connect with professional therapists and counsellors for your mental health needs.
+                    <a href="#">Access professional support</a>
+                </div>
+                <div class="card-footer">
+                    <span></span>
+                    <div class="share">
+                        <button>Click</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        gsap.from(".yellow-bg", {
+            y: "-100%",
+            opacity: 0,
+            duration: 1,
+            delay: 0.5
+        })
+        gsap.from("h1 span", {
+            y: 10,
+            opacity: 0,
+            delay: 0.8,
+            stagger: 0.2
+        })
+        gsap.from(".container", {
+            y: "200%",
+            opacity: 0,
+            duration: 1,
+            delay: 1
+        })
+        gsap.from(".card:nth-child(1)", {
+            x: -200,
+            opacity: 0,
+            delay: 2
+        })
+        gsap.from(".card:nth-child(3)", {
+            x: 200,
+            opacity: 0,
+            delay: 2
+        })
+        gsap.from(".card:nth-child(2)", {
+            y: 100,
+            opacity: 0,
+            delay: 2
+        })
+    </script>
+</body>
+</html>
